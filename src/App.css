@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+}
+
+.container {
+  border: 1px dotted #666;
+  padding: 1em;
+  margin: 0 auto;
+}
