@@ -2,7 +2,7 @@ import React, { FC, useState } from 'react';
 import { Button, Card } from 'semantic-ui-react';
 import { Child } from './Child';
 
-import './styles.scss';
+import styles from './styles.module.scss';
 
 export const PropStateChangeComp: FC = () => {
   const [a, setA] = useState('a');
@@ -12,7 +12,7 @@ export const PropStateChangeComp: FC = () => {
   };
 
   return (
-    <Card className='parent'>
+    <Card className={styles.parent}>
       <h3>Child prop state change</h3>
       <p>
         A state created from a prop variable passed in by parent will
